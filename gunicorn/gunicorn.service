@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/home/ubuntu/test/session
-ExecStart= /home/ubuntu/venv/bin/gunicorn \
+WorkingDirectory=/home/ubuntu/AWS-prac/session
+ExecStart= /home/ubuntu/AWS-prac/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \

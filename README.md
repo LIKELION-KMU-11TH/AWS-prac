@@ -6,7 +6,7 @@
     sudo vi /etc/systemd/system/gunicorn.socket
 
 # gunicorn 확인
-    sudo systemctl status gunicorn.socketsudo systemctl start gunicorn
+    sudo systemctl start gunicorn
     sudo systemctl enable gunicorn
     sudo systemctl status gunicorn.service
 
